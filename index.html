@@ -10,22 +10,34 @@
            background-image:url("beans.jpeg");
            background-size: cover;
             display: flex;
-           justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center; 
             flex-direction: column;
              margin-top: 80px;
              height: auto;
             
     }
+    .outer-container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          /* align-items: center; */
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-bottom: 10px;
+    }
+
     .inner-container{
          display: flex;
-         /* flex-direction: column; */
+         flex-direction: column;
          flex-wrap: wrap;
          justify-content: space-between;
-         align-items: center;
-         padding-left: 50px;
-         padding-right: 50px;
+         /* align-items: center; */
+         padding-left: 80px;
+         padding-right: 80px;
     }
+
     h1,#p2,.a1,.image-container{
         text-align: center;
         flex-wrap: wrap;
@@ -44,15 +56,17 @@
         border-radius: 25px; */
         /* height : auto;
         width: 600px; */
-        height: 410;
-        width: 300px;
+        height: auto;
+        width: auto;
         background-color: rgb(244, 195, 136);
         border-radius: 20px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         padding: 20px;
-        /* display: flex;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
 
     }  
       #p1{
@@ -61,7 +75,7 @@
     text-align: center;
   } 
   a{
-    color: black;
+    color: blue;
   }
      </style>
 </head>
@@ -78,53 +92,47 @@
        <div class="image-container">
          <img src="coffee icon.png" alt="mug" width="40px" height="40px">
        </div>
-       <div class="outer-container">
+         <div class="outer-container">
             <div class="inner-container">
-              <p>French Vanilla</p>
-              <p>3.00</p>
+              <p>French Vanilla
+                <br>Caramel macchiato
+                <br>Pumkin Spice
+                <br>Hazeinut
+                <br>Mocha
+              </p>
             </div>
             <div class="inner-container">
-              <p>Caramel macchiato</p>
-              <p>3.75</p>
+              <p>3.00
+                <br>3.75
+                <br>3.50
+                <br>4.00
+                <br>4.50
+              </p>
             </div>
-            <div class="inner-container">
-              <p>Pumkin Spice</p>
-              <p>3.50</p>
-            </div>
-            <div class="inner-container">
-              <p>Hazeinut</p>
-              <p>4.00</p>
-            </div>
-            <div class="inner-container">
-              <p>Mocha</p>
-              <p>4.50</p>
-            </div>
-        </div>
+           </div>
               <p id="p1">Desserts</p>
             <div class="image-container">
               <img src="Dessert icon.png" alt="cake" width="40px" height="40px">
             </div>
             <div class="outer-container">
              <div class="inner-container">
-              <p>Donut</p>
-              <p>1.50</p>
+              <p>Donut
+                 <br>Cherry Pieo
+                 <br>Cheesecake
+                 <br>Cinnamon Roll
+                </p>
             </div>
             <div class="inner-container">
-              <p>Cherry Pieo</p>
-              <p>2.75</p>
-            </div>
-            <div class="inner-container">
-               <p>Cheesecake</p>
-               <p>3.00</p>
-            </div>
-            <div class="inner-container">
-               <p>Cinnamon Roll</p>
-               <p>2.50</p>
+              <p>1.50
+                <br>2.75
+                <br>3.00
+                <br>2.50
+              </p>
             </div>
         </div>
         <hr>
         <div class="a1">
-           <a href="#">Visit our Website</a>
+           <a href="https://www.starbucks.in/ordering">Visit our Website</a>
         </div>
         <p id="p2">123 Free code Camp Drive</p>
     </div>  

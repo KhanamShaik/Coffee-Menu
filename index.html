@@ -6,16 +6,17 @@
     <title>coffee menu</title>
     <style>
     body{
+           
            background-image:url("beans.jpeg");
            background-size: cover;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-items: center; 
             flex-direction: column;
-             margin: 0;
-             min-height: 100vh;
-             padding: 20px;
+             margin-top: 80px;
+             height: auto;
+            
     }
     .outer-container{
           display: flex;
@@ -40,50 +41,52 @@
     h1,#p2,.a1,.image-container{
         text-align: center;
         flex-wrap: wrap;
-    }
+    } 
     hr{
       border-style: solid;
       width: 95%;
       border-width: 5px;
       border-color: brown;
-  }
+  }    
   .b1{
         /* background-color: bisque; */
-        width: 90%;
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
+        margin: 100px 450px;
+        /* padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px; */
+        /* height : auto;
+        width: 600px; */
         height: auto;
+        width: auto;
         background-color: rgb(244, 195, 136);
         border-radius: 20px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        /* padding: 20px; */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
+
+    }  
       #p1{
         font-size: 30px;
     font-weight: bold;
     text-align: center;
-  }
+  } 
   a{
     color: blue;
-  }
-  img{
-    max-width: 100%;
-    height: auto;
   }
 
      /* Mobile Styles (up to 767px) */
      @media (max-width: 767px) {
          body {
+             margin-top: 20px;
              padding: 10px;
          }
          .b1 {
-             width: 95%;
-             margin: 10px auto;
+             margin: 20px 10px;
+             width: calc(100% - 20px);
              padding: 10px;
          }
          .outer-container {
@@ -106,9 +109,8 @@
      /* Tablet Styles (768px to 1023px) */
      @media (min-width: 768px) and (max-width: 1023px) {
          .b1 {
-             width: 85%;
-             margin: 15px auto;
-             padding: 15px;
+             margin: 50px 50px;
+             width: calc(100% - 100px);
          }
          .inner-container {
              padding-left: 40px;

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee menu</title>
+    <style>
+    body{
+           
+           background-image:url("beans.jpeg");
+           background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+             margin-top: 80px;
+             height: auto;
+            
+    }
+    .outer-container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          /* align-items: center; */
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-bottom: 10px;
+    }
+
+    .inner-container{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         /* align-items: center; */
+         padding-left: 80px;
+         padding-right: 80px;
+    }
+
+    h1,#p2,.a1,.image-container{
+        text-align: center;
+        flex-wrap: wrap;
+    } 
+    hr{
+      border-style: solid;
+      width: 95%;
+      border-width: 5px;
+      border-color: brown;
+  }    
+  .b1{
+        /* background-color: bisque; */
+        margin: 100px 450px;
+        /* padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px; */
+        /* height : auto;
+        width: 600px; */
+        height: auto;
+        width: auto;
+        background-color: rgb(244, 195, 136);
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        /* padding: 20px; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }  
+      #p1{
+        font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  } 
+  a{
+    color: blue;
+  }
+
+     /* Mobile Styles (up to 767px) */
+     @media (max-width: 767px) {
+         body {
+             margin-top: 20px;
+             padding: 10px;
+         }
+         .b1 {
+             margin: 20px 10px;
+             width: calc(100% - 20px);
+             padding: 10px;
+         }
+         .outer-container {
+             flex-direction: column;
+             align-items: center;
+         }
+         .inner-container {
+             padding-left: 10px;
+             padding-right: 10px;
+             text-align: center;
+         }
+         #p1 {
+             font-size: 24px;
+         }
+         hr {
+             width: 100%;
+         }
+     }
+
+     /* Tablet Styles (768px to 1023px) */
+     @media (min-width: 768px) and (max-width: 1023px) {
+         .b1 {
+             margin: 50px 50px;
+             width: calc(100% - 100px);
+         }
+         .inner-container {
+             padding-left: 40px;
+             padding-right: 40px;
+         }
+         #p1 {
+             font-size: 28px;
+         }
+     }
+
+     /* Desktop Styles (1024px and above) - Default styles apply */
+     </style>
+</head>
+<body>
+    <div class="b1">
+       <h1>
+        CAMPER CAFE
+       </h1>
+       <P id="p2">
+        Est 2020
+       </P>
+       <hr>
+       <p id="p1">Coffee</p>
+       <div class="image-container">
+         <img src="coffee icon.png" alt="mug" width="40px" height="40px">
+       </div>
+         <div class="outer-container">
+            <div class="inner-container">
+              <p>French Vanilla
+                <br>Caramel macchiato
+                <br>Pumkin Spice
+                <br>Hazeinut
+                <br>Mocha
+              </p>
+            </div>
+            <div class="inner-container">
+              <p>3.00
+                <br>3.75
+                <br>3.50
+                <br>4.00
+                <br>4.50
+              </p>
+            </div>
+           </div>
+              <p id="p1">Desserts</p>
+            <div class="image-container">
+              <img src="Dessert icon.png" alt="cake" width="40px" height="40px">
+            </div>
+            <div class="outer-container">
+             <div class="inner-container">
+              <p>Donut
+                 <br>Cherry Pieo
+                 <br>Cheesecake
+                 <br>Cinnamon Roll
+                </p>
+            </div>
+            <div class="inner-container">
+              <p>1.50
+                <br>2.75
+                <br>3.00
+                <br>2.50
+              </p>
+            </div>
+        </div>
+        <hr>
+        <div class="a1">
+           <a href="https://www.starbucks.in/ordering">Visit our Website</a>
+        </div>
+        <p id="p2">123 Free code Camp Drive</p>
+    </div>  
+</body>
+</html>
